@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import me.dio.sacola.enums.FormsPayment;
 
 @AllArgsConstructor
@@ -27,6 +28,7 @@ import me.dio.sacola.enums.FormsPayment;
 @Data
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Entity
+@NoArgsConstructor
 public class Bag {
     
     @Id
